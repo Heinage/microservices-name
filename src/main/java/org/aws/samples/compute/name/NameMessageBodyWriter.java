@@ -37,6 +37,7 @@ public class NameMessageBodyWriter implements MessageBodyWriter<Name> {
 
     Writer writer = new PrintWriter(out);
     writer.write(name.getName());
+    //writer.write(name.getName() + "!\n");
     writer.flush();
     writer.close();
   }
